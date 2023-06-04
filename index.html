@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+
+    <script src="myScript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <p class="clock">The Current Date and Time: <span id="digital-clock"></span></p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg nav-color" >
+        <a class="navbar-brand" href="#">A...REZAIY</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportContent" aria-controls="navbarSupportContent" aria-expanded="false" aria-label="toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportContent">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#home">home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about" >about</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills" >Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery" >Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact" >Contact</a></li>
+        </ul>
+    </div>
+    </nav>
+        
+    
+    <section class="main">
+        <div class="pink"></div>
+        <div class="white"></div>
+        <div class="box" id="home">
+            <div class="row">
+                <div class="col-sm-6"> 
+                    <h1><strong>Arezu Rezaiy</strong></h1>
+                    <h2 >Hi, I am Arezu</h2>
+                    <h4 >Software Engineer</h4>
+                    <p>I see myself as a person with high passion to learn.</p>
+                </div>
+                <div class="col-sm-6"> 
+                     <img class="rounded-circle" src="pictures/pic1.jpg" alt="picture">
+                </div>
+            </div>
+        </div>
+        <div class="box box2" id="about"> 
+            <div class="row">
+                <div class="col-md">
+                    <h2 class="titles"><em>about me:</em></h2>
+                    <p>I am <em>Arezu Rezaiy</em>, student in Software engineering department of computer
+                        science faculty of herat public universty and full stack learner in Code to Inspire(CTI).
+                        I learned Web Development and Python programming languge at Afghan Pathways program in university of 
+                        southren california(USC).
+                        Being a good software engineer and web developer is what I desire, and my intrests are reading, coding and travel.
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <img class="rounded" src="pictures/pic2.jpg"  alt="picture">
+                </div>
+            </div>
+        </div>
+        <div class="box box3" id="skills">
+            <h2><em>Skills:</em></h2>
+            <div class="progress"><div class="progress-bar progress-bar-striped bg-warning" style="width: 90%;">HTML</div></div>
+            <div class="progress"><div class="progress-bar progress-bar-striped bg-success" style="width: 75%;">CSS</div></div>
+            <div class="progress"><div class="progress-bar progress-bar-striped bg-danger" style="width: 85%;">Bootstrpt</div></div>
+            <div class="progress"><div class="progress-bar progress-bar-striped bg-info" style="width: 70%;">Java Script</div></div>
+            <div class="progress"><div class="progress-bar progress-bar-striped bg-primary" style="width: 70%;">Java</div></div>
+            <div class="progress"><div class="progress-bar progress-bar-striped bg-secondary" style="width: 70%;">Python</div></div>
+            <div class="progress"><div class="progress-bar progress-bar-striped bg-danger" style="width: 60%;">C</div></div>
+            <div class="progress"><div class="progress-bar progress-bar-striped bg-info" style="width: 85%;">English</div></div>
+        </div> 
+        <div class="box box4" id="gallery">
+           <div class="row">
+                <div class="col-sm">
+                    <h3 class="titles"> Certificates:</h3>
+                    <div class="row">
+                        <div class="col-sm-6"><img class="img" src="pictures/web.jpg" alt=""></div>
+                        <div class="col-sm-6"><img class="img" src="pictures/python.jpg" alt=""></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6"><img class="img" src="pictures/english.jpg" alt=""></div>
+                        <div class="col-sm-6"><img class="img" src="pictures/award.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <h3 class="titles">Short video about Success</h3>
+                   
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/KfY-8Ly3IEw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                   
+                </div>
+           </div>
+            
+            
+        </div>
+        <div class="box box5" id="contact">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>let's get in touch!</h3>
+                    <img class="rounded-circle" src="pictures/pic4.jpg" alt="picture">
+                </div>
+                <div class="col-sm-6">
+                    <h4 >Contact me:</h4>
+                    <form action="#">
+                        <input  type="text" placeholder="Name" name="name" >
+                        <input  type="email" name="email" placeholder="Email" required>
+                        <textarea  name="messege" placeholder="Messege here" cols="20" rows="5"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p> For more information,follow me in social media. <br>
+        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-github" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        </p>
+    </footer>
+</body>
+</html>
